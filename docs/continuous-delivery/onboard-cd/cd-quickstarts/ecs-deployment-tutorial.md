@@ -1100,6 +1100,12 @@ If you do not select this option, Harness will not check to see if the task was 
 
 If you do select this option, Harness will poll the ECS task to see if it triggered successfully.
 
+### Support for Task Definition ARN in ECS Run Task
+ECS Run Task supports ARN Definition for Task Definition configuration
+
+You can provided a pre-generate ARN of Task Definition in ECS Run Task and run the pipeline
+
+
 ### Support for ECS Deployments with Service Mesh Configuration
 Harness ECS Deployments supports deploying of ECS Services with AWS Service Discovery Configuration
 
