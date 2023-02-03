@@ -1103,7 +1103,13 @@ If you do select this option, Harness will poll the ECS task to see if it trigge
 ### Support for Task Definition ARN in ECS Run Task
 ECS Run Task supports ARN Definition for Task Definition configuration
 
-You can provided a pre-generate ARN of Task Definition in ECS Run Task and run the pipeline
+You can provided a pre-generated ARN of Task Definition in ECS Run Task and run the pipeline
+
+Run Task Definition is fetched from the cluster using the ARN and deployment is performed 
+
+![image](https://user-images.githubusercontent.com/104134358/216655438-b16d2338-c8c0-47aa-9f88-123262f67e53.png)
+
+
 
 
 ### Support for ECS Deployments with Service Mesh Configuration
