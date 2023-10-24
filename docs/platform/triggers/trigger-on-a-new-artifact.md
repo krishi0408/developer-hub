@@ -423,6 +423,33 @@ You can reuse triggers by copying and pasting trigger YAML. This can be helpful 
 
 ![](./static/trigger-on-a-new-artifact-29.png)
 
+### On New Artifact Triggers now supports Multiregion configuration
+
+When artifacts repositories such as GAR are enabled with multiregion support ,  artifacts of the same version are available across different regions for easy consumption .
+Each region can have similar artifacts . 
+This support in on New Artifact ,enables configuration of triggers with availability of artifacts from multiple regions
+On New Artifact Triggers can have the regions configured and conditions associated with the artifact across regions .
+This would enable the pipeline to be triggered based on the availability of artifacts in different regions
+
+
+#### Multi region Artifact configuration
+
+You can define  multiple regions where the artifact is available
+
+To configure multi region for the artifact, do the following:
+
+1. Select the listen on new artifact section in the On New Artifact Trigger
+2. Configure the primary region where the artifact is available .Connector associated to the artifact should be pointing to the region
+3. Select on MultiRegion artifact and add artifacts corresponding to other regions
+4. Add as many regions as it is required for the trigger configuration
+
+<img width="1024" alt="image" src="https://github.com/harness/developer-hub/assets/104134358/fe7e4f37-bda5-42ab-95a5-078976c20384">
+
+#### Select Condition
+1.Select the condition required for the artifacts across different regions
+
+When the artifact version is available across the different regions the condition is evaluated for all the artifacts and the pipeline is triggered based on the results of the evaluation
+
 :::note
 
 Trigger artifact expressions used in a pipeline are resolved when you rerun a pipeline that was activated by a trigger.
