@@ -33,4 +33,6 @@ pipeline:
                   identifier: Run_1
                   spec:
                     shell: Sh
-                    command: echo hello
+                    command: |-
+                      echo hello 
+                      echo hey
