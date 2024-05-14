@@ -36,3 +36,27 @@ pipeline:
                     command: |-
                       echo hello 
                       echo hey
+    - stage:
+        name: krishika_stage2
+        identifier: krishika_stage2
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          caching:
+            enabled: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Run_1
+                  identifier: Run_1
+                  spec:
+                    shell: Sh
+                    command: echo helloworld
