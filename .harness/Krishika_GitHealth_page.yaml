@@ -34,7 +34,8 @@ pipeline:
                   spec:
                     shell: Sh
                     command: |-
-                      echo hello 
+                      echo hel
+                      lo 
                       echo hey
     - stage:
         name: krishika_stage2
