@@ -1,6 +1,6 @@
 pipeline:
   name: Krishika_GitHealth_page
-  identifier: Krishika_GitHealth_page_identifier
+  identifier: Krishika_GitHealth_page
   projectIdentifier: krishika_test
   orgIdentifier: default
   tags: {}
